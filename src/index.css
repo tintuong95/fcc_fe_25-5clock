@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: digital;
+  src: url("./fonts/digital-7.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #1e555c;
+  color: white;
 }
+
+.container {
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.break-length-child,
+.session-length-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.time-down {
+  border: 10px solid white;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 30px 0px;
+  gap: 20px;
+}
+
+.time-down > h1 {
+text-align: center;
+}
+
+.time {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: digital;
+}
+.flex-action{
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-red{
+  color: red;
+}
+
