@@ -61,7 +61,8 @@ const [label, setLabel] = useState("Session");
                   }
                 }}
               >
-                <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+                {/* <i class="far fa-arrow-alt-circle-down fa-2x"></i> */}
+                Down
               </span>
               <div id="break-length">{timeBreak / miliseconds}</div>
               <span
@@ -72,7 +73,8 @@ const [label, setLabel] = useState("Session");
                   }
                 }}
               >
-                <i class="	far fa-arrow-alt-circle-up fa-2x"></i>
+                {/* <i class="	far fa-arrow-alt-circle-up fa-2x"></i> */}
+                Up
               </span>
             </div>
           </div>
@@ -87,7 +89,8 @@ const [label, setLabel] = useState("Session");
                   }
                 }}
               >
-                <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+                {/* <i class="far fa-arrow-alt-circle-down fa-2x"></i> */}Down
+
               </span>
               <span id="session-length">{timeDown / miliseconds}</span>
               <span
@@ -98,7 +101,8 @@ const [label, setLabel] = useState("Session");
                   }
                 }}
               >
-                <i class="	far fa-arrow-alt-circle-up fa-2x"></i>
+                {/* <i class="	far fa-arrow-alt-circle-up fa-2x"></i> */}
+                Up
               </span>
             </div>
           </div>
@@ -117,12 +121,14 @@ const [label, setLabel] = useState("Session");
         </section>
         <section className="flex-action">
           <span id="start_stop" onClick={onPaused}>
-            <i class="far fa-play-circle fa-lg"></i>
-            <i class="	fas fa-pause fa-lg"></i>
+            Play/Pause
+            {/* <i class="far fa-play-circle fa-lg"></i>
+            <i class="	fas fa-pause fa-lg"></i> */}
           </span>
 
           <span id="reset" onClick={onStarted}>
-            <i class="	fas fa-sync-alt fa-lg"></i>
+            {/* <i class="	fas fa-sync-alt fa-lg"></i> */}
+            Reset
           </span>
         </section>
         <section className="flex">
